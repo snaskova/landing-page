@@ -295,9 +295,8 @@ footer{
         width: 100%;
         position: absolute;
         display: block !important;
-        // top: -200px;
         top: 53px;
-        left: 0;
+        left: -100%;
         background: #fff;
         padding: 0px;
         box-shadow: 0 16px 11px -14px rgba(0,0,0,0.09);
@@ -320,7 +319,7 @@ footer{
 
         &.open{
             opacity: 1;
-            // top: 53px;
+            left: 0;
         }
     }
     .hamburger{
