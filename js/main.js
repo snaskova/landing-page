@@ -2,11 +2,16 @@ $('.owl-carousel').owlCarousel({
     items: 1,
     loop: true,
     dots: false,
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout: 6000,
     autoplayHoverPause: true,
     nav: true,
     navText: ['<i class="fas fa-chevron-left"></i>','<i class="fas fa-chevron-right"></i>'],
+    responsive: {
+        768:{
+            autoplay: true,
+        }
+    }
 });
 
 

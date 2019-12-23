@@ -186,7 +186,7 @@ form{
 
 .slide_card {
     border-radius: 7px;
-    padding: 20px 40px;
+    padding: 30px 40px;
     background-color: #fff;
     box-shadow: 0 0 16px 0px rgba(0, 0, 0, 0.09);
 }
@@ -196,6 +196,9 @@ form{
 
     p{
         margin: 10px 0;
+    }
+    span{
+font-weight: 300;
     }
     img{
         max-width: 160px;
