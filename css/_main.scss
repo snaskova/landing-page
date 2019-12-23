@@ -46,6 +46,8 @@ nav {
         color: $grey;
         font-weight: 700;
         font-size: 15px;
+
+        &:hover {opacity: .8;}
     }
 }
 
@@ -59,11 +61,11 @@ nav {
 }
 
 .header_img{
-    width: 80%;
+    width: 100%;
     max-width: 550px;
 }
 
-#about { background-color: #f1f1f1;}
+.about { background-color: #f1f1f1;}
     
 .video_container{
     position: relative;
@@ -100,7 +102,7 @@ nav {
     }
 
 
-#contact {
+.contact {
     background: url("../img/contact-bg.jpg") center center/cover no-repeat;
 }
 
@@ -124,11 +126,12 @@ form{
         border-radius: 5px;
         width: 100%;
         font-size: 16px;
-        border: 1px solid transparent;
+        border: 2px solid transparent;
+        transition: all .2s ease-out;
         
 
         &:focus{
-            border: 1px solid $green;
+            border: 2px solid $green;
             outline: none;
         }
 
@@ -173,6 +176,9 @@ form{
     
                 &:active{
                     background-color: darken(#fff, 5%);
+                }
+                &:hover{
+                    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
                 }
             }
         }
@@ -315,6 +321,8 @@ footer{
         .nav_link{
             display: block;
             padding: 20px 30px;
+
+            &:hover{ opacity: 1;}
         }
 
         &.open{
@@ -332,5 +340,16 @@ footer{
                 position: relative;
             }
         }
+    }
+
+    .header_img{
+        padding-top: 20px;
+    }
+}
+@media screen and (max-width: 560px) {
+    .slide_card { 
+        padding: 30px 20px;
+        box-shadow: none;
+        border: 1px solid #e3e3e3;
     }
 }

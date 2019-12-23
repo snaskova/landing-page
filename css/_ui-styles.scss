@@ -1,6 +1,7 @@
 a {
     color: $green;
     text-decoration: none;
+    transition: all .2s ease-out;
 }
 
 button{
@@ -22,6 +23,8 @@ button{
     font-weight: 700;
     color: #fff;
     background-color: $green;
+
+    transition: all .2s ease-out;
 
     &:hover{
         background-color: lighten($green, 5%);
@@ -47,5 +50,5 @@ p,q {
 }
 
 @media screen and (max-width: 768px){
-    h1{ font-size: 32px;}
+    h1{ font-size: 29px;}
 }

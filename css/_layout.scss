@@ -10,7 +10,14 @@
     margin: 0 auto;
 }
 
-section { padding: 60px 30px;}
+
+section { padding: 60px 30px; position: relative;}
+
+.anchor {
+position: absolute;
+  left: 0px;
+  top: -70px;
+}
 
 @media screen and (max-width: 768px){
     section{
